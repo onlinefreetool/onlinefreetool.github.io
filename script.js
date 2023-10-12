@@ -1,3 +1,5 @@
+// number system convertion and operation
+
 function convert() {
     var cvinput = document.getElementById("convertion-input").value;
     var cvtype = document.getElementById("convertion-type").value;
@@ -143,3 +145,21 @@ function solve() {
     // Display the result in the HTML element
     document.getElementById("operation-result").innerHTML = output.toUpperCase();
 }
+
+
+// instant calculator
+function instacalcu() {
+    var InstaCalcuinput = document.getElementById("instacalcuinput").value;
+    var InstaCalcuoutput = document.getElementById("instacalcu-result");
+    try {
+        var result = eval(InstaCalcuinput);
+        if (isNaN(result)) {
+            InstaCalcuoutput.innerHTML = "Please enter a valid input only";
+        } else {
+            InstaCalcuoutput.innerHTML = result;
+        }
+    } catch (error) {
+        InstaCalcuoutput.innerHTML = "Error: " + error.message;
+    }
+}
+setInterval(instacalcu, 1);
