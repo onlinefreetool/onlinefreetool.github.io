@@ -2,89 +2,94 @@
 <html>
 
 <head>
-    <link rel="icon" type="image/png" href="OFT.png" />
-    <title>Online Free Tools</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta property="og:title" content="Online Free Tools Number System Converter and Calculator">
-    <meta property="og:description" content="Solve your calculation problems!">
-    <meta property="og:image" content="https://onlinefreetool.github.io/OFT.jpg">
-    <meta property="og:url" content="https://onlinefreetool.github.io/">
-    <script src="script.js"></script>
+  <link rel="icon" type="image/png" href="OFT.png" />
+  <title>Online Free Tools</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta property="og:title" content="Online Free Tools Number System Converter and Calculator">
+  <meta property="og:description" content="Solve your calculation problems!">
+  <meta property="og:image" content="https://onlinefreetool.github.io/OFT.jpg">
+  <meta property="og:url" content="https://onlinefreetool.github.io/">
+  <script src="script.js"></script>
 </head>
-<body>
-    <div id="content">
-        Number System Convertion and Calculator <br>
-        <a href="./">Home</a>
-        <ul style="text-align:left">
-            <li>Convertion</li>
-              <input id="convertion-input" type="text">
-              Convertion Type: <br>
-              <select id="convertion-type">
-                <option value="db">Decimal -> Binary</option>
-                <option value="dh">Decimal -> Hex</option>
-                <option value="do">Decimal -> Octal</option>
-                <option value="bd">Binary -> Decimal</option>
-                <option value="bo">Binary -> Octal</option>
-                <option value="bh">Binary -> Hex</option>
-                <option value="ob">Octal -> Binary</option>
-                <option value="od">Octal -> Decimal</option>
-                <option value="oh">Octal -> Hex</option>
-                <option value="hb">Hex -> Binary</option>
-                <option value="ho">Hex -> Octal</option>
-                <option value="hd">Hex -> Decimal</option>
-              </select>
-              <br>
-              <button onclick="convert();">Convert</button>
-              <br>
-              Result: <div id="convertion-result">_____________</div>
 
-              <hr><script async="async" data-cfasync="false" src="//leoparddisappearcrumble.com/4b28596d12cae582c907148ab42d0cc9/invoke.js"></script>
-              <div id="container-4b28596d12cae582c907148ab42d0cc9"></div><hr>
-            <li>Operation</li>
-            <table id="operation-table">
-                <tr>
-                    <td><input id="in1op" type="text"></td>
-                    <td><select id="operation-type">
-                        <option value="a">+</option>
-                        <option value="s">-</option>
-                        <option value="m">*</option>
-                        <option value="d">/</option>
-                      </select></td>
-                    <td><input id="in2op" type="text"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <select id="in1sys">
-                        <option value="10">Decimal</option>
-                        <option value="2">Binary</option>
-                        <option value="8">Octal</option>
-                        <option value="16">Hex</option>
-                      </select></td>
-                    <td></td>
-                    <td>
-                        <select id="in2sys">
-                            <option value="10">Decimal</option>
-                            <option value="2">Binary</option>
-                            <option value="8">Octal</option>
-                            <option value="16">Hex</option>
-                          </select>
-                    </td>
-                </tr>
-            </table>
-            Output Base Number: 
-               <select id="in3sys">
-                <option value="10">Decimal</option>
-                <option value="2">Binary</option>
-                <option value="8">Octal</option>
-                <option value="16">Hex</option>
-              </select>
-            <button onclick="solve();">Solve</button><br>
-            Result: <div id="operation-result">_____________</div>
-        </ul>
-        <hr>
-        Website created by <a target="_blank" href="https://webplix.github.io/">Webplix</a>
-    </div>
+<body>
+  <div id="content">
+    Number System Convertion and Calculator <br>
+    <a href="./">Home</a>
+    <ul style="text-align:left">
+      <li>Convertion</li>
+      <input id="convertion-input" type="text">
+      Convertion Type: <br>
+      <select id="convertion-type">
+        <option value="db">Decimal -> Binary</option>
+        <option value="dh">Decimal -> Hex</option>
+        <option value="do">Decimal -> Octal</option>
+        <option value="bd">Binary -> Decimal</option>
+        <option value="bo">Binary -> Octal</option>
+        <option value="bh">Binary -> Hex</option>
+        <option value="ob">Octal -> Binary</option>
+        <option value="od">Octal -> Decimal</option>
+        <option value="oh">Octal -> Hex</option>
+        <option value="hb">Hex -> Binary</option>
+        <option value="ho">Hex -> Octal</option>
+        <option value="hd">Hex -> Decimal</option>
+      </select>
+      <br>
+      <button onclick="convert();">Convert</button>
+      <br>
+      Result: <div id="convertion-result">_____________</div>
+
+      <hr>
+      <script async="async" data-cfasync="false"
+        src="//leoparddisappearcrumble.com/4b28596d12cae582c907148ab42d0cc9/invoke.js"></script>
+      <div id="container-4b28596d12cae582c907148ab42d0cc9"></div>
+      <hr>
+      <li>Operation</li>
+      <table id="operation-table">
+        <tr>
+          <td><input id="in1op" type="text"></td>
+          <td><select id="operation-type">
+              <option value="a">+</option>
+              <option value="s">-</option>
+              <option value="m">*</option>
+              <option value="d">/</option>
+            </select></td>
+          <td><input id="in2op" type="text"></td>
+        </tr>
+        <tr>
+          <td>
+            <select id="in1sys">
+              <option value="10">Decimal</option>
+              <option value="2">Binary</option>
+              <option value="8">Octal</option>
+              <option value="16">Hex</option>
+            </select>
+          </td>
+          <td></td>
+          <td>
+            <select id="in2sys">
+              <option value="10">Decimal</option>
+              <option value="2">Binary</option>
+              <option value="8">Octal</option>
+              <option value="16">Hex</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      Output Base Number:
+      <select id="in3sys">
+        <option value="10">Decimal</option>
+        <option value="2">Binary</option>
+        <option value="8">Octal</option>
+        <option value="16">Hex</option>
+      </select>
+      <button onclick="solve();">Solve</button><br>
+      Result: <div id="operation-result">_____________</div>
+    </ul>
+    <hr>
+    Website created by <a target="_blank" href="https://webplix.github.io/">Webplix</a>
+  </div>
 </body>
 
 </html>
