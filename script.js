@@ -1,10 +1,18 @@
+// anti adblocker
+function onStart() {
+    var myDiv = document.getElementById("content");
+    if (window.getComputedStyle(myDiv).display == "none") {
+        alert("Please disable your adblocker to use our service, thank you!");
+    }
+}
+
 // number system convertion and operation
 
 function convert() {
     var cvinput = document.getElementById("convertion-input").value;
     var cvtype = document.getElementById("convertion-type").value;
     var cvoutput = document.getElementById("convertion-result");
-    
+
     if (cvinput.trim() === "") {
         cvoutput.innerHTML = "Input is empty, please enter an input";
     } else {
